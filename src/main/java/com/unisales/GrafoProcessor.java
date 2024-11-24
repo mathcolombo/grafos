@@ -10,6 +10,7 @@ import com.unisales.algoritmos.Prim;
 
 public class GrafoProcessor {
 
+    private static String pathGeral = "C:\\Users\\Mathe\\Documentos\\faculdade\\4-Periodo\\PIE\\grafos\\src\\main\\java\\com\\unisales\\files";
     public static void main(String[] args) throws IOException {
         escreverResultados();
     }
@@ -33,9 +34,9 @@ public class GrafoProcessor {
                     // Executa leitura do grafo BAY
                     if(rota == 1) {
     
-                        String arquivoEntrada = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\entrada\\bay-entrada.gr"; // Caminho do arquivo de entrada
+                        String arquivoEntrada = pathGeral + "\\entrada\\bay-entrada.gr"; // Caminho do arquivo de entrada
 
-                        String arquivoSaida = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\saida\\djikstra\\bay-saida.csv"; // Caminho do arquivo de saída CSV
+                        String arquivoSaida = pathGeral + "\\saida\\djikstra\\bay-saida.csv"; // Caminho do arquivo de saída CSV
     
                         Grafo grafo = lerGrafo(arquivoEntrada);
 
@@ -67,9 +68,9 @@ public class GrafoProcessor {
                     // Executa leitura do grafo COL
                     if(rota == 2) {
     
-                        String arquivoEntrada = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\entrada\\col-entrada.gr"; // Caminho do arquivo de entrada
+                        String arquivoEntrada = pathGeral + "\\entrada\\col-entrada.gr"; // Caminho do arquivo de entrada
 
-                        String arquivoSaida = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\saida\\djikstra\\col-saida.csv"; // Caminho do arquivo de saída CSV
+                        String arquivoSaida = pathGeral + "\\saida\\djikstra\\col-saida.csv"; // Caminho do arquivo de saída CSV
     
                         Grafo grafo = lerGrafo(arquivoEntrada);
 
@@ -101,9 +102,9 @@ public class GrafoProcessor {
                     // Executa leitura do grafo NY
                     if(rota == 3) {
     
-                        String arquivoEntrada = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\entrada\\ny-entrada.gr"; // Caminho do arquivo de entrada
+                        String arquivoEntrada = pathGeral + "\\entrada\\ny-entrada.gr"; // Caminho do arquivo de entrada
 
-                        String arquivoSaida = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\saida\\djikstra\\ny-saida.csv"; // Caminho do arquivo de saída CSV
+                        String arquivoSaida = pathGeral + "\\saida\\djikstra\\ny-saida.csv"; // Caminho do arquivo de saída CSV
     
                         Grafo grafo = lerGrafo(arquivoEntrada);
 
@@ -145,9 +146,9 @@ public class GrafoProcessor {
                     // Executa leitura do grafo BAY
                     if(rota == 1) {
     
-                        String arquivoEntrada = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\entrada\\bay-entrada.gr"; // Caminho do arquivo de entrada
+                        String arquivoEntrada = pathGeral + "\\entrada\\bay-entrada.gr"; // Caminho do arquivo de entrada
 
-                        String arquivoSaida = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\saida\\kruskal\\bay-saida.csv"; // Caminho do arquivo de saída CSV
+                        String arquivoSaida = pathGeral + "\\saida\\kruskal\\bay-saida.csv"; // Caminho do arquivo de saída CSV
     
                         Grafo grafo = lerGrafo(arquivoEntrada);
 
@@ -179,9 +180,9 @@ public class GrafoProcessor {
                     // Executa leitura do grafo COL
                     if(rota == 2) {
     
-                        String arquivoEntrada = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\entrada\\col-entrada.gr"; // Caminho do arquivo de entrada
+                        String arquivoEntrada = pathGeral + "\\entrada\\col-entrada.gr"; // Caminho do arquivo de entrada
 
-                        String arquivoSaida = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\saida\\kruskal\\col-saida.csv"; // Caminho do arquivo de saída CSV
+                        String arquivoSaida = pathGeral + "\\saida\\kruskal\\col-saida.csv"; // Caminho do arquivo de saída CSV
     
                         Grafo grafo = lerGrafo(arquivoEntrada);
 
@@ -213,9 +214,9 @@ public class GrafoProcessor {
                     // Executa leitura do grafo NY
                     if(rota == 3) {
     
-                        String arquivoEntrada = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\entrada\\ny-entrada.gr"; // Caminho do arquivo de entrada
+                        String arquivoEntrada = pathGeral + "\\entrada\\ny-entrada.gr"; // Caminho do arquivo de entrada
 
-                        String arquivoSaida = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\saida\\kruskal\\ny-saida.csv"; // Caminho do arquivo de saída CSV
+                        String arquivoSaida = pathGeral + "\\saida\\kruskal\\ny-saida.csv"; // Caminho do arquivo de saída CSV
     
                         Grafo grafo = lerGrafo(arquivoEntrada);
 
@@ -257,9 +258,9 @@ public class GrafoProcessor {
                     // Executa leitura do grafo BAY
                     if(rota == 1) {
     
-                        String arquivoEntrada = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\entrada\\bay-entrada.gr"; // Caminho do arquivo de entrada
+                        String arquivoEntrada = pathGeral + "\\entrada\\bay-entrada.gr"; // Caminho do arquivo de entrada
 
-                        String arquivoSaida = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\saida\\prim\\bay-saida.csv"; // Caminho do arquivo de saída CSV
+                        String arquivoSaida = pathGeral + "\\saida\\prim\\bay-saida.csv"; // Caminho do arquivo de saída CSV
     
                         Grafo grafo = lerGrafo(arquivoEntrada);
 
@@ -291,9 +292,9 @@ public class GrafoProcessor {
                     // Executa leitura do grafo COL
                     if(rota == 2) {
     
-                        String arquivoEntrada = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\entrada\\col-entrada.gr"; // Caminho do arquivo de entrada
+                        String arquivoEntrada = pathGeral + "\\entrada\\col-entrada.gr"; // Caminho do arquivo de entrada
 
-                        String arquivoSaida = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\saida\\prim\\col-saida.csv"; // Caminho do arquivo de saída CSV
+                        String arquivoSaida = pathGeral + "\\saida\\prim\\col-saida.csv"; // Caminho do arquivo de saída CSV
     
                         Grafo grafo = lerGrafo(arquivoEntrada);
 
@@ -325,9 +326,9 @@ public class GrafoProcessor {
                     // Executa leitura do grafo NY
                     if(rota == 3) {
     
-                        String arquivoEntrada = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\entrada\\ny-entrada.gr"; // Caminho do arquivo de entrada
+                        String arquivoEntrada = pathGeral + "\\entrada\\ny-entrada.gr"; // Caminho do arquivo de entrada
 
-                        String arquivoSaida = "C:\\Users\\matheus.colombo\\Documents\\Faculdade\\Analise_de_algoritmos\\ProjetoGrafos\\projetografos\\src\\main\\java\\com\\unisales\\files\\saida\\prim\\ny-saida.csv"; // Caminho do arquivo de saída CSV
+                        String arquivoSaida = pathGeral + "\\saida\\prim\\ny-saida.csv"; // Caminho do arquivo de saída CSV
     
                         Grafo grafo = lerGrafo(arquivoEntrada);
 
