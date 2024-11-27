@@ -1,30 +1,42 @@
 package com.unisales.algoritmos;
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
+import java.util.Arrays;
 
 public class Prim {
-    public int calcularAGM(Grafo grafo) {
-        boolean[] visitado = new boolean[grafo.getVertices()];
-        PriorityQueue<Grafo.Aresta> fila = new PriorityQueue<>(Comparator.comparingInt(a -> a.peso));
+    public static int prim(Grafo grafo) {
+        int n = grafo.getVertices();
+        int[] chave = new int[n];
+        boolean[] visitados = new boolean[n];
+
+        Arrays.fill(chave, Integer.MAX_VALUE);
+        chave[0] = 0;
         int custoTotal = 0;
 
-        fila.add(new Grafo.Aresta(0, 0)); // Começa no vértice 0
-        while (!fila.isEmpty()) {
-            Grafo.Aresta atual = fila.poll();
-            int destino = atual.destino;
+        for (int i = 0; i < n; i++) {
+            int u = minChave(chave, visitados);
+            visitados[u] = true;
+            custoTotal += chave[u];
 
-            if (visitado[destino]) continue;
-            visitado[destino] = true;
-            custoTotal += atual.peso;
-
-            for (Grafo.Aresta vizinho : grafo.getAdjacentes(destino)) {
-                if (!visitado[vizinho.destino]) {
-                    fila.add(vizinho);
+            for (Grafo.Aresta aresta : grafo.getArestasDoVertice(u)) {
+                int v = aresta.getDestino();
+                int peso = aresta.getPeso();
+                if (!visitados[v] && peso < chave[v]) {
+                    chave[v] = peso;
                 }
             }
         }
 
         return custoTotal;
+    }
+
+    private static int minChave(int[] chave, boolean[] visitados) {
+        int min = Integer.MAX_VALUE, minIndex = -1;
+        for (int v = 0; v < chave.length; v++) {
+            if (!visitados[v] && chave[v] < min) {
+                min = chave[v];
+                minIndex = v;
+            }
+        }
+        return minIndex;
     }
 }
